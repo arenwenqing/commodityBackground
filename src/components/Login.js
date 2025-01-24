@@ -12,7 +12,7 @@ const Login = () => {
     console.log('Login values:', values);
     // 这里应该调用登录API，现在我们只是模拟登录成功
     if (values.username === 'renwenqingzhenshuai' && values.password === 'bixushuai') {
-      history.push('/addCommodity');
+      history.push('/commodityBackground/addCommodity');
     } else {
       setOpen(true)
     }
@@ -41,7 +41,7 @@ const Login = () => {
         <p>我草，真笨错了重新输入吧</p>
       </Modal>
       <Card style={{ width: 350, boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
-        <Title level={2} style={{ textAlign: 'center', marginBottom: 30 }}>管理平台登录</Title>
+        <Title level={3} style={{ textAlign: 'center', marginBottom: 30 }}>团团转后台管理平台</Title>
         <Form
           name="login"
           onFinish={onFinish}
